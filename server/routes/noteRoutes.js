@@ -18,4 +18,5 @@ router.get('/:id', noteController.getNoteById);
 // Protected upload route (PDF file upload)
 router.post('/', authMiddleware, upload.single('file'), noteController.uploadNote);
 
+
 module.exports = router;
